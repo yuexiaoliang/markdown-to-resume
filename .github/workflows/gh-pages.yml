@@ -1,0 +1,56 @@
+name: gh-pages
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      DOCS_GA_ID: G-CTB8FQ7VMW
+      NODE_VERSION: '16'
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install ttf-mscorefonts
+        run: sudo apt-get install ttf-mscorefonts-installer
+
+      - name: Install fontconfig
+        run: sudo apt-get install fontconfig
+
+      - name: Install Fonts
+        run: sudo cp -r assets/fonts/ /usr/share/fonts && sudo mkfontscale && sudo mkfontdir && sudo fc-cache -fv
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7.9.4
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build documentation site
+        run: pnpm build
+
+      - name: Create CNAME
+        run: cd dist && echo "resume.yuexiaoliang.com" > CNAME
+
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2.2.0
+        with:
+          target_branch: gh-pages
+          build_dir: dist
+        env:
+          GH_PAT: ${{ secrets.ACTION_TOKEN }}

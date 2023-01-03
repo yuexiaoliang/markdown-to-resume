@@ -1,0 +1,16 @@
+{
+  "name": "resume.yuexiaoliang.com",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "preview": "http-server dist"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.1.0",
+    "http-server": "^14.1.1",
+    "markdown-it": "^13.0.1",
+    "puppeteer": "^19.4.1"
+  }
+}
