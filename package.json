@@ -4,13 +4,33 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "node build.js",
-    "preview": "http-server dist"
+    "build": "node src/build.js",
+    "preview": "node src/server.js",
+    "watch": "nodemon src/dev.js",
+    "dev": "concurrently \"pnpm watch\" \"pnpm preview\""
   },
   "devDependencies": {
+    "concurrently": "^7.6.0",
     "fs-extra": "^11.1.0",
     "http-server": "^14.1.1",
+    "live-server": "^1.2.2",
     "markdown-it": "^13.0.1",
+    "nodemon": "^2.0.20",
     "puppeteer": "^19.4.1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "node_modules",
+      "dist",
+      ".vscode",
+      ".git",
+      ".github"
+    ],
+    "delay": "500",
+    "watch": [
+      "src",
+      "index.html",
+      "README.md"
+    ]
   }
 }
