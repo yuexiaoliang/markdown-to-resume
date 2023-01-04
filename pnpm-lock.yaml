@@ -6,6 +6,9 @@ specifiers:
   http-server: ^14.1.1
   live-server: ^1.2.2
   markdown-it: ^13.0.1
+  markdown-it-attrs: ^4.1.6
+  markdown-it-container: ^3.0.0
+  markdown-it-imsize: ^2.0.1
   nodemon: ^2.0.20
   puppeteer: ^19.4.1
 
@@ -15,6 +18,9 @@ devDependencies:
   http-server: 14.1.1
   live-server: 1.2.2
   markdown-it: 13.0.1
+  markdown-it-attrs: 4.1.6_markdown-it@13.0.1
+  markdown-it-container: 3.0.0
+  markdown-it-imsize: 2.0.1
   nodemon: 2.0.20
   puppeteer: 19.4.1
 
@@ -1317,6 +1323,23 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       object-visit: 1.0.1
+    dev: true
+
+  /markdown-it-attrs/4.1.6_markdown-it@13.0.1:
+    resolution: {integrity: sha512-O7PDKZlN8RFMyDX13JnctQompwrrILuz2y43pW2GagcwpIIElkAdfeek+erHfxUOlXWPsjFeWmZ8ch1xtRLWpA==}
+    engines: {node: '>=6'}
+    peerDependencies:
+      markdown-it: '>= 9.0.0'
+    dependencies:
+      markdown-it: 13.0.1
+    dev: true
+
+  /markdown-it-container/3.0.0:
+    resolution: {integrity: sha512-y6oKTq4BB9OQuY/KLfk/O3ysFhB3IMYoIWhGJEidXt1NQFocFK2sA2t0NYZAMyMShAGL6x5OPIbrmXPIqaN9rw==}
+    dev: true
+
+  /markdown-it-imsize/2.0.1:
+    resolution: {integrity: sha512-5SH90ademqcR8ifQCBXRCfIR4HGfZZOh5pO0j2TglulfSQH+SBXM4Iw/QlTUbSoUwVZArCYgECoMvktDS2kP3w==}
     dev: true
 
   /markdown-it/13.0.1:
