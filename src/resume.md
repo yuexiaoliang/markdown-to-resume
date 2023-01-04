@@ -4,6 +4,8 @@
 
 一个人的闲暇时间里，藏着未来的人生层次。
 
+![123](./logo.svg)
+
 ## 个人信息
 
 - 岳晓亮 / 男 / 1993
@@ -246,5 +248,5 @@ Vue、小程序、高德地图、uni-app、Taro、TypeScript、Electron、EChart
 ::::
 
 :::: {.main-footer}
-*[岳晓亮个人简历.pdf](./assets/岳晓亮个人简历.pdf){target="_blank"}*
+*[岳晓亮个人简历.pdf](./岳晓亮个人简历.pdf){target="_blank"}*
 ::::

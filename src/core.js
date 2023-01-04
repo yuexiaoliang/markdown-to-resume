@@ -13,14 +13,13 @@ export const __filename = fileURLToPath(import.meta.url);
 export const __dirname = dirname(__filename);
 
 export const buildPDF = async () => {
-  const html = fs.readFileSync(resolve(__dirname, '../dist/index.html')).toString();
-
   const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
-  await page.setContent(html, { waitUntil: 'networkidle0' });
+  const url = 'file://' + resolve(__dirname, '../dist/index.html');
+  await page.goto(url);
 
   await page.pdf({
-    path: resolve(__dirname, '../dist/assets/岳晓亮个人简历.pdf'),
+    path: resolve(__dirname, '../dist/岳晓亮个人简历.pdf'),
     format: 'A4',
     displayHeaderFooter: false,
     printBackground: true,
@@ -39,7 +38,6 @@ export const createMD = () => {
   const markdown = new MarkdownIt();
   markdown.use(markdownItContainer, 'container', {
     validate: function (params) {
-      // const reg = /^\{.*\}(.*)$/;
       const reg = /^.*$/;
       return reg.test(params.trim());
     },
@@ -74,27 +72,10 @@ export const createMD = () => {
   return markdown;
 };
 
-export const buildHTML = async () => {
+export const md2html = () => {
   const markdown = createMD();
 
-  const readme = fs.readFileSync(resolve(__dirname, './README.md')).toString();
+  const readme = fs.readFileSync(resolve(__dirname, './resume.md')).toString();
 
-  const template = fs.readFileSync(resolve(__dirname, '../index.html')).toString();
-
-  const html = template.replace('#[content]', markdown.render(readme));
-
-  fs.writeFileSync(resolve(__dirname, '../dist/index.html'), html, 'utf-8');
-};
-
-export const createDir = () => {
-  const outputPath = resolve(__dirname, '../dist');
-  if (fs.pathExistsSync(outputPath)) fs.removeSync(outputPath);
-  fs.mkdir(outputPath);
-  fs.copySync(resolve(__dirname, 'assets'), resolve(outputPath, 'assets'));
-};
-
-export const buildAll = async () => {
-  createDir();
-  await buildHTML();
-  await buildPDF();
+  return markdown.render(readme);
 };

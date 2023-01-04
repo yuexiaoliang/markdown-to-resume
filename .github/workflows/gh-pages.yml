@@ -26,7 +26,7 @@ jobs:
         run: sudo apt-get install fontconfig
 
       - name: Install Fonts
-        run: sudo cp -r src/assets/fonts/ /usr/share/fonts && sudo mkfontscale && sudo mkfontdir && sudo fc-cache -fv
+        run: sudo cp -r fonts/ /usr/share/fonts && sudo mkfontscale && sudo mkfontdir && sudo fc-cache -fv
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2.2.2
@@ -42,7 +42,7 @@ jobs:
         run: pnpm install
 
       - name: Build documentation site
-        run: pnpm build
+        run: pnpm vite:build
 
       - name: Create CNAME
         run: cd dist && echo "resume.yuexiaoliang.com" > CNAME
