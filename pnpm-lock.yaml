@@ -7,9 +7,13 @@ specifiers:
   markdown-it-container: ^3.0.0
   markdown-it-imsize: ^2.0.1
   puppeteer: ^19.4.1
+  reset.css: ^2.0.2
   rollup-pluginutils: ^2.8.2
   sass: ^1.57.1
   vite: ^4.0.4
+
+dependencies:
+  reset.css: 2.0.2
 
 devDependencies:
   fs-extra: 11.1.0
@@ -865,6 +869,10 @@ packages:
     dependencies:
       picomatch: 2.3.1
     dev: true
+
+  /reset.css/2.0.2:
+    resolution: {integrity: sha512-HG5RQLYcAxou3yw+Gnzwan1jJCbOcIBZjwoD/YLWuAd8kkuDI/ZqC0uRhY4ReKOOJaM1Y1kvwebHOwK4P8Sevg==}
+    dev: false
 
   /resolve-from/4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}

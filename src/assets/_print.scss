@@ -1,0 +1,23 @@
+@media print {
+  @page {
+    margin: 0px;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    -moz-print-color-adjust: exact;
+    -ms-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color-adjust: exact !important;
+    background-color: #fff;
+  }
+
+  .main {
+    margin: 0 auto;
+    box-shadow: none;
+  }
+
+  .main-footer {
+    display: none;
+  }
+}

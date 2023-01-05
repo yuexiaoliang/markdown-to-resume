@@ -1,31 +1,23 @@
 :::: {.basic-info}
 
-# 岳晓亮简历
+::: {.left}
+# 岳晓亮 {.name}
 
-一个人的闲暇时间里，藏着未来的人生层次。
+**求职意向：高级前端 / 25K / 北京** {.target}
 
-![123](./logo.svg)
+- **生日：** 1993.02.24
+- **前端：** 8 年
+- **籍贯：** 河北张家口
+- **手机：** 13932364394
+- **邮箱：** 2220124666@qq.com
 
-## 个人信息
+{.list}
+:::
 
-- 岳晓亮 / 男 / 1993
-- \--
-- 前端：8 年
-- 籍贯：河北张家口
-- \--
-- 期望职位：高级 Web 前端开发
-- 期望薪资：25k~30k
-- 期望城市：北京
+::: {.right}
+![岳晓亮](./me.jpg){.portrait}
+:::
 
-## 联系方式
-
-- 手机：13932364394
-- 微信：yuexiaoliang1993
-- E-mail：2220124666@qq.como
-
-## 技能树
-
-Vue、小程序、高德地图、uni-app、Taro、TypeScript、Electron、ECharts、Vite、Rollup、NPM、Git。
 ::::
 
 :::: {.main-content}
@@ -43,19 +35,14 @@ Vue、小程序、高德地图、uni-app、Taro、TypeScript、Electron、EChart
 **工作内容：**
 
 - 担任公司前端负责人（共 3 人）。
-
 - 评估项目需求，制定前端组开发计划，包含估时、排期。
-
 - 作为主力开发，并解决一切前端组问题，包括但不限于前端。
-
 - 根据需要进行新技术预研、引入。
 
 **工作业绩：**
 
 - 封装 10+ 常用组件、10+ 常用图表。
-
 - 作为公司所有前端项目负责人（超过 5 个），从没出过线上事故。
-
 - 重写积分系统，使项目整体体积降低近百倍，维护提效近百倍。
 
 ### 青云科技有限公司
@@ -69,11 +56,8 @@ Vue、小程序、高德地图、uni-app、Taro、TypeScript、Electron、EChart
 **工作内容：**
 
 - 负责录制《零基础入门 Python 写一个爬虫玩》、《从零开始学习 JavaScript，10 天的前端工程师蜕变之路》、《【响应式网站开发】小成本实现多端兼容》等网络课程，实现累计 50000+ 学习人次。
-
 - 统一前后端接口规范，推动 API 文档平台的使用落地(ShowDoc)。
-
 - 作为公司超过 5 个前端项目的主要开发人员，包含 WEB、H5、小程序。
-
 - 独自从零到一实现“宣化万柳中医门诊部”小程序，项目规模 20+ 页面，开发周期 1 个月，项目收益 38 万。
 
 ### 每淘电子商务有限公司
@@ -102,18 +86,6 @@ Vue、小程序、高德地图、uni-app、Taro、TypeScript、Electron、EChart
 
 ## 项目经验
 
-### 项目名称
-
-- [ ] **时间：**
-
-- [ ] **技术栈：**
-
-- [ ] **项目介绍：**
-
-- [ ] **项目职责：**
-
-- [ ] **项目架构(如果有参与)：**
-
 ### 积分系统-重写（政府项目）
 
 **时间：** 2022.07 - 2022.09
@@ -132,7 +104,7 @@ Vue、小程序、高德地图、uni-app、Taro、TypeScript、Electron、EChart
 - 项目分为 PC 端 + 移动端。
 - 移动端主要以 Web 为主，运行环境主要以小程序、APP 的 WebView 中。
 - 采用 `Monorepo` 的方式进行代码管理。
-- 仓库分为 `apps` 以及 `packages` 两部分子包。
+- 仓库分为 `apps` 以及 packages` 两部分子包。
 - `apps` 包含系统级的项目，如：`score-pc`、`score-h5`、`score-weapp` 等。
 - `packages` 包含 `apps` 中项目所用的公共部分，如：`score-utils`、`score-apis`、`score-validator`、`score-build`、`hz-components`、`hz-charts`。
 
@@ -216,13 +188,14 @@ Vue、小程序、高德地图、uni-app、Taro、TypeScript、Electron、EChart
 
 ## 开源项目
 
-- [TMW](https://tmw.li)：打字背单词
+- [**TMW**](https://tmw.li)：打字背单词
+- [**table-merge**](https://github.com/yuexiaoliang/table-merge)：极佳、极简、通用的表格合并方案，已提供多个 UI 框架开箱即用。
+- [**v-per**](https://github.com/yuexiaoliang/v-per)：用来控制权限的 Vue 自定义指令。
+- [**vite-plugin-import-rewriter**](https://github.com/yuexiaoliang/vite-plugin-import-rewriter)：重写 import 的 vite 插件。
 
-- [table-merge](https://github.com/yuexiaoliang/table-merge)：极佳、极简、通用的表格合并方案，已提供多个 UI 框架开箱即用。
+## 技能树
 
-- [v-per](https://github.com/yuexiaoliang/v-per)：用来控制权限的 Vue 自定义指令。
-
-- [vite-plugin-import-rewriter](https://github.com/yuexiaoliang/vite-plugin-import-rewriter)：重写 import 的 vite 插件。
+Vue、小程序、高德地图、uni-app、Taro、TypeScript、Electron、ECharts、Vite、Rollup、NPM、Git。
 
 ## 个人优势
 
@@ -236,17 +209,19 @@ Vue、小程序、高德地图、uni-app、Taro、TypeScript、Electron、EChart
 
 ## 社区地址
 
-- GitHub： https://github.com/yuexiaoliang
-- NPM： https://npmjs.com/~yuexiaoliang1993
-- 知乎：https://www.zhihu.com/people/dulegege
-- 掘金：https://juejin.cn/user/1574156384083688
+- **GitHub：** https://github.com/yuexiaoliang
+- **NPM：** https://npmjs.com/~yuexiaoliang1993
+- **知乎：** https://www.zhihu.com/people/dulegege
+- **掘金：** https://juejin.cn/user/1574156384083688
 
 ## 致谢
 
 感谢您花时间阅读我的简历，期待能有机会和您共事。
 
-::::
+::: {.main-footer}
+[下载 PDF 版](./岳晓亮个人简历.pdf){target="_blank"}
 
-:::: {.main-footer}
-*[岳晓亮个人简历.pdf](./岳晓亮个人简历.pdf){target="_blank"}*
+[打印简历](#){#print-button}
+:::
+
 ::::

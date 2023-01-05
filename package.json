@@ -18,5 +18,8 @@
     "rollup-pluginutils": "^2.8.2",
     "sass": "^1.57.1",
     "vite": "^4.0.4"
+  },
+  "dependencies": {
+    "reset.css": "^2.0.2"
   }
 }
