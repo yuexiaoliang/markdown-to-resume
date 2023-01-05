@@ -188,10 +188,11 @@
 
 ## 开源项目
 
+- [**markdown-to-resume**](https://github.com/yuexiaoliang/markdown-to-resume)：Markdown 转个人简历。
 - [**TMW**](https://tmw.li)：打字背单词
 - [**table-merge**](https://github.com/yuexiaoliang/table-merge)：极佳、极简、通用的表格合并方案，已提供多个 UI 框架开箱即用。
-- [**v-per**](https://github.com/yuexiaoliang/v-per)：用来控制权限的 Vue 自定义指令。
 - [**vite-plugin-import-rewriter**](https://github.com/yuexiaoliang/vite-plugin-import-rewriter)：重写 import 的 vite 插件。
+- [**v-per**](https://github.com/yuexiaoliang/v-per)：用来控制权限的 Vue 自定义指令。
 
 ## 技能树
 
