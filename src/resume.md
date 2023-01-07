@@ -15,7 +15,7 @@
 :::
 
 ::: {.right}
-![岳晓亮](./me.jpg){.portrait}
+![岳晓亮](./me.jpg =127x170){.portrait}
 :::
 
 ::::
@@ -208,7 +208,7 @@
 
 Vue生态、小程序、高德地图、uni-app、Taro、TypeScript、Electron、ECharts、Vite、Rollup、Nodejs、NPM、Git。{style="page-break-after: always"}
 
-## 个人优势
+## 个人优势 {data-print style="--print-padding: 50px 0 0 0"}
 
 **经验丰富：** 前端 7 年、社会 16 年
 
@@ -230,7 +230,7 @@ Vue生态、小程序、高德地图、uni-app、Taro、TypeScript、Electron、
 感谢您花时间阅读我的简历，期待能有机会和您共事。
 
 ::: {.main-footer}
-[下载 PDF 版](./岳晓亮个人简历.pdf){target="_blank"}
+[下载 PDF 版](岳晓亮个人简历.pdf){download="岳晓亮个人简历.pdf"}
 
 [打印简历](#){#print-button}
 :::
