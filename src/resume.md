@@ -5,8 +5,8 @@
 
 **求职意向：高级前端 / 25K / 北京** {.target}
 
+- **前端：** 7 年
 - **生日：** 1993.02.24
-- **前端：** 8 年
 - **籍贯：** 河北张家口
 - **手机：** 13932364394
 - **邮箱：** 2220124666@qq.com
@@ -28,6 +28,8 @@
 
 **职位：** 高级前端开发工程师
 
+**薪资：** 17K
+
 **时间：** 2021.06 - 2023.01
 
 **地址：** 北京
@@ -43,11 +45,13 @@
 
 - 封装 10+ 常用组件、10+ 常用图表。
 - 作为公司所有前端项目负责人（超过 5 个），从没出过线上事故。
-- 重写积分系统，使项目整体体积降低近百倍，维护提效近百倍。
+- 重写积分系统，项目复杂度从 O(n) 优化到 O(1)。
 
 ### 青云科技有限公司
 
 **职位：** 讲师/前端开发工程师
+
+**薪资：** 10K
 
 **时间：** 2019.03 - 2021.06
 
@@ -56,13 +60,16 @@
 **工作内容：**
 
 - 负责录制《零基础入门 Python 写一个爬虫玩》、《从零开始学习 JavaScript，10 天的前端工程师蜕变之路》、《【响应式网站开发】小成本实现多端兼容》等网络课程，实现累计 50000+ 学习人次。
+- 独自从零到一实现“宣化万柳中医门诊部”小程序，项目规模 20+ 页面，开发周期 1 个多月，项目收益 38 万。{style="page-break-after: always"}
+- 作为公司超过 5 个前端项目的主要开发人员，包含 WEB、H5、小程序。{data-print style="--print-padding: 50px 0 0 0"}
 - 统一前后端接口规范，推动 API 文档平台的使用落地(ShowDoc)。
-- 作为公司超过 5 个前端项目的主要开发人员，包含 WEB、H5、小程序。
-- 独自从零到一实现“宣化万柳中医门诊部”小程序，项目规模 20+ 页面，开发周期 1 个月，项目收益 38 万。
+
 
 ### 每淘电子商务有限公司
 
 **职位：** 前端工程师
+
+**薪资：** 5K
 
 **时间：** 2018.03 - 2019.02
 
@@ -75,6 +82,8 @@
 ### 阿拉怪网络科技有限公司
 
 **职位：** 前端工程师
+
+**薪资：** 3K
 
 **时间：** 2015.01 - 2016.04
 
@@ -102,15 +111,15 @@
 **项目架构：**
 
 - 项目分为 PC 端 + 移动端。
-- 移动端主要以 Web 为主，运行环境主要以小程序、APP 的 WebView 中。
-- 采用 `Monorepo` 的方式进行代码管理。
-- 仓库分为 `apps` 以及 packages` 两部分子包。
+- 移动端主要以 Web 为主，运行环境主要在小程序、APP 的 WebView 中。
+- 采用 `Monorepo` 的方式进行代码管理。{style="page-break-after: always"}
+- 仓库分为 `apps` 以及 `packages` 两部分子包。{data-print style="--print-padding: 50px 0 0 0"}
 - `apps` 包含系统级的项目，如：`score-pc`、`score-h5`、`score-weapp` 等。
 - `packages` 包含 `apps` 中项目所用的公共部分，如：`score-utils`、`score-apis`、`score-validator`、`score-build`、`hz-components`、`hz-charts`。
 
 **特色功能：**
 
-- 可通过命令行工具选择要打包的高新区，或者一键打包全部高新区。
+- 可通过命令行工具选择要打包的高新区、运行环境，或者一键打包全部高新区。
 - 根据项目启动参数按需 `import` 对应的静态资源、模块等。
 - 基于 `Echarts` 的大屏可视化数据展示。
 
@@ -125,7 +134,8 @@
 **项目职责：**
 
 - 项目前端负责人。
-- 对主要功能进行技术可行性预研，并开发对应 DEMO。
+- 对小程序端主要功能（地图多边形渲染、行走路线绘制）进行技术可行性预研，并开发对应 DEMO 供组员参考。
+- 对 PC 端主要功能进行开发。
 
 **特色功能：**
 
@@ -153,12 +163,12 @@
 - 预约挂号
 - 在线问诊
 - 医生详情
-- 科室选择
-- 疾病选择
+- 科室选择 {style="page-break-after: always"}
+- 疾病选择 {data-print style="--print-padding: 50px 0 0 0"}
 
 ### 汽车美容收银办卡程序（个人项目）
 
-独自开发的汽车美容会馆会员办卡软件，是个完全离线的应用，包含激活功能，虽然很笨拙。
+独自开发的汽车美容会馆会员办卡软件，是个完全离线的应用。
 
 **时间：** 2020.06 - 2020.08
 
@@ -169,6 +179,7 @@
 
 **主要功能：**
 
+- 基于非对称加密的软件激活功能
 - 会员管理
 - 会员搜索
 - 充值统计、消费统计
@@ -177,7 +188,6 @@
 - 车牌号管理
 - 本地储存管理
 - 非会员结算、账单统计
-- 基于非对称加密的软件激活功能
 
 **项目地址：** https://github.com/yuexiaoliang/chemeizhangben
 
@@ -188,25 +198,25 @@
 
 ## 开源项目
 
-- [**markdown-to-resume**](https://github.com/yuexiaoliang/markdown-to-resume)：Markdown 转个人简历。
-- [**TMW**](https://tmw.li)：打字背单词
+- [**markdown-to-resume**](https://github.com/yuexiaoliang/markdown-to-resume)：Markdown 转个人简历，本简历（https://resume.yuexiaoliang.com）即是由此而来。
+- [**TMW**](https://tmw.li)：打字背单词（https://tmw.li）
 - [**table-merge**](https://github.com/yuexiaoliang/table-merge)：极佳、极简、通用的表格合并方案，已提供多个 UI 框架开箱即用。
 - [**vite-plugin-import-rewriter**](https://github.com/yuexiaoliang/vite-plugin-import-rewriter)：重写 import 的 vite 插件。
 - [**v-per**](https://github.com/yuexiaoliang/v-per)：用来控制权限的 Vue 自定义指令。
 
 ## 技能树
 
-Vue、小程序、高德地图、uni-app、Taro、TypeScript、Electron、ECharts、Vite、Rollup、NPM、Git。
+Vue生态、小程序、高德地图、uni-app、Taro、TypeScript、Electron、ECharts、Vite、Rollup、Nodejs、NPM、Git。{style="page-break-after: always"}
 
 ## 个人优势
 
-**经验丰富：** 前端 8 年、社会 16 年
+**经验丰富：** 前端 7 年、社会 16 年
 
 **热爱学习：** 包括但不限于早通勤看技术书籍、晚通勤看教学视频等。
 
-**代码洁癖：** 个人认为，必须有高效的编程功底才能在项目急迫的时候依然书写出优雅的代码。
+**代码洁癖：** 个人认为，必须有高效的编程功力才能在项目急迫的时候依然书写出优雅的代码。
 
-**抗压力强：** 只要钱到位，996 都能接受。
+**抗压力强：** 只要钱到位，996 也不是不行。
 
 ## 社区地址
 
