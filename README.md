@@ -10,17 +10,35 @@ Markdown 转个人简历。
 
 ## 使用方式
 
-1. Fork 本仓库 `https://github.com/yuexiaoliang/markdown-to-resume/fork` 并 Clone。
-1. 安装依赖 `pnpm install`。
-1. 运行 `pnpm dev`。
-1. 修改 `src/resume.md`。
-1. 仓库中增加名为 *ACTION_TOKEN* 的 *Actions secrets*，参考：[Actions生成 secrets](https://www.jianshu.com/p/5afbd53e1700)。
-1. 修改 `.github/workflows/gh-pages.yml` 第 *48* 行为 *Github Pages* 要绑定的自定义域名，或删除 *46 - 48* 行。
-1. 提交代码。
-1. 启用并运行名为 *gh-pages* 的 *Actions*。
-1. 开启仓库的 *Github Pages*。
+### 创建简历
 
-如果一切顺利，恭喜你已经可以了~
+``` bash
+pnpm create markdown-to-resume
+```
+
+### 编辑简历
+
+``` bash
+# 启动服务
+pnpm dev
+
+# 编辑 `src/resume.md`
+```
+### 构建简历
+
+``` bash
+# 启动服务
+pnpm build
+```
+
+
+### 配置自动部署
+1. 仓库中增加名为 **ACTION_TOKEN** 的 **Actions secrets**，参考：[Actions生成 secrets](https://www.jianshu.com/p/5afbd53e1700)。
+1. 修改 `.github/workflows/gh-pages.yml` 第 **48** 行为 **Github Pages** 要绑定的自定义域名，或删除 **46 至 48** 行。
+1. 提交代码。
+1. 配置 **Github Pages**。
+
+如果一切顺利，恭喜你之后只需要：修改 => 提交 => 等待自动部署完成
 
 ## 配置
 
