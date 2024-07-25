@@ -15,6 +15,9 @@ export default defineConfig({
       webTitle: '岳晓亮个人简历 - markdown-to-resume'
     })
   ],
+  server: {
+    host: true
+  },
   build: {
     assetsDir: './'
   }
