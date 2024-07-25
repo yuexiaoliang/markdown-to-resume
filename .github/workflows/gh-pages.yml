@@ -29,9 +29,9 @@ jobs:
         run: sudo cp -r fonts/ /usr/share/fonts && sudo mkfontscale && sudo mkfontdir && sudo fc-cache -fv
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2.2.2
+        uses: pnpm/action-setup@v4
         with:
-          version: 7.9.4
+          version: 8
 
       - name: Setup Node
         uses: actions/setup-node@v3
