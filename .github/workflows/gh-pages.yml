@@ -4,20 +4,21 @@ on:
   push:
     branches:
       - master
-  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    env:
-      DOCS_GA_ID: G-CTB8FQ7VMW
-      NODE_VERSION: '16'
-
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+
+      - name: Set node
+        uses: actions/setup-node@v4
         with:
-          fetch-depth: 0
+          node-version: lts/*
 
       - name: Install ttf-mscorefonts
         run: sudo apt-get install ttf-mscorefonts-installer
@@ -28,15 +29,8 @@ jobs:
       - name: Install Fonts
         run: sudo cp -r fonts/ /usr/share/fonts && sudo mkfontscale && sudo mkfontdir && sudo fc-cache -fv
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 8
-
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ env.NODE_VERSION }}
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
 
       - name: Install dependencies
         run: pnpm install
@@ -44,13 +38,11 @@ jobs:
       - name: Build documentation site
         run: pnpm build
 
-      - name: Create CNAME
-        run: cd dist && echo "resume.yuexiaoliang.com" > CNAME
-
       - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v2.2.0
+        uses: crazy-max/ghaction-github-pages@v4.0.0
         with:
           target_branch: gh-pages
           build_dir: dist
+          fqdn: resume.yuexiaoliang.com
         env:
-          GH_PAT: ${{ secrets.ACTION_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
