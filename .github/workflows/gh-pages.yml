@@ -15,10 +15,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set node
+      - name: Setup node
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 8
 
       - name: Install ttf-mscorefonts
         run: sudo apt-get install ttf-mscorefonts-installer
@@ -28,9 +33,6 @@ jobs:
 
       - name: Install Fonts
         run: sudo cp -r fonts/ /usr/share/fonts && sudo mkfontscale && sudo mkfontdir && sudo fc-cache -fv
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3
 
       - name: Install dependencies
         run: pnpm install
