@@ -38,13 +38,15 @@ pnpm create markdown-to-resume
 
 ##### 修改 `.github/workflows/gh-pages.yml`
 
-``` yml {6:line-numbers}
+``` yml
+
 - name: Deploy to GitHub Pages
   uses: crazy-max/ghaction-github-pages@v4.0.0
   with:
     target_branch: gh-pages
     build_dir: dist
     fqdn: resume.yuexiaoliang.com
+
 ```
 将 `fqdn` 修改为你的域名，例如：`resume.yuexiaoliang.com`，如果不需要请注释或者删除。
 
