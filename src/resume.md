@@ -26,7 +26,7 @@
 
 - **基本：** Git、TypeScript、NPM
 - **前端：** Vue 全家桶、高德地图、ECharts、小程序、uni-app、Taro
-- **大前端：** Nodejs、Rollup、Vite、Electron
+- **大前端：** Nodejs、Rollup、Vite、Electron、影刀RPA
 - **人工智能：** AI Prompt、OpenAI (Chat GPT)
 
 ## 工作经历
